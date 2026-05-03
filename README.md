@@ -24,3 +24,8 @@ ml_journey/
 Day 1: Learned NumPy arrays, indexing 
 and basic operations. Applied to real 
 Titanic passenger age data.
+
+"I started with a small sample of 
+10 passengers to understand NumPy 
+operations before applying them 
+to the full 891 passenger dataset"
