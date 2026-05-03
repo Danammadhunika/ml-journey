@@ -33,3 +33,10 @@ to the full 891 passenger dataset"
 Day 2: Learned NumPy 2D arrays, 
 statistical operations (mean, max, min).
 Applied to real Titanic passenger data.
+
+Day 3: Loaded Titanic dataset using Pandas.
+Explored data using head(), shape(), info(), 
+describe(). Cleaned missing values — filled 
+Age with mean, Embarked with mode, 
+dropped Cabin column. All columns now 
+have 0 missing values!
