@@ -29,3 +29,7 @@ Titanic passenger age data.
 10 passengers to understand NumPy 
 operations before applying them 
 to the full 891 passenger dataset"
+
+Day 2: Learned NumPy 2D arrays, 
+statistical operations (mean, max, min).
+Applied to real Titanic passenger data.
