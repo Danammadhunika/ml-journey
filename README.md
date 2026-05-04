@@ -40,3 +40,9 @@ describe(). Cleaned missing values — filled
 Age with mean, Embarked with mode, 
 dropped Cabin column. All columns now 
 have 0 missing values!
+
+Day 4: Data Analysis complete!
+- Found overall survival rate = 38%
+- Women survived more than men (74% vs 19%)
+- 1st class survived more than 3rd (63% vs 24%)
+- Children had highest survival rate (58%)
