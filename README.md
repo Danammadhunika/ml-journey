@@ -57,3 +57,10 @@ Day 5: Data Visualization complete!
 - Bar chart: Survival by gender and class
 Key finding: Female 1st class had 97% 
 survival rate vs Male 3rd class 14%!
+
+Day 6: Feature Engineering complete!
+- Converted Sex column: male=0, female=1
+- Converted Embarked column: C=0, Q=1, S=2
+- Dropped useless columns: Name, Ticket, AgeGroup
+- Dataset now has 9 numeric columns
+- Data is ready for ML model!
