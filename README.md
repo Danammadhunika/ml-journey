@@ -46,3 +46,14 @@ Day 4: Data Analysis complete!
 - Women survived more than men (74% vs 19%)
 - 1st class survived more than 3rd (63% vs 24%)
 - Children had highest survival rate (58%)
+
+Day 5: Data Visualization complete!
+- Bar chart: Survived vs Died
+- Pie chart: Survival percentage
+- Bar chart: Survival rate by gender
+- Bar chart: Survival rate by class
+- Histogram: Age distribution
+- Bar chart: Survival rate by age group
+- Bar chart: Survival by gender and class
+Key finding: Female 1st class had 97% 
+survival rate vs Male 3rd class 14%!
