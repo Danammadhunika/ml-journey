@@ -79,3 +79,6 @@ Day 8: Model Evaluation complete!
 - Classification Report: complete analysis
 - Model better at predicting deaths (83%)
   than survivors (79%)
+
+Added: Complete ML Notes PDF and 
+Titanic Project Presentation PPT
