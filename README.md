@@ -64,3 +64,11 @@ Day 6: Feature Engineering complete!
 - Dropped useless columns: Name, Ticket, AgeGroup
 - Dataset now has 9 numeric columns
 - Data is ready for ML model!
+
+Day 7: Machine Learning Model complete!
+- Created X (features) and y (target)
+- Split data: 80% train, 20% test
+- Built Logistic Regression model
+- Trained model on 712 passengers
+- Predicted survival on 179 passengers
+- Achieved 81% accuracy!
