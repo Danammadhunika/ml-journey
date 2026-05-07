@@ -72,3 +72,10 @@ Day 7: Machine Learning Model complete!
 - Trained model on 712 passengers
 - Predicted survival on 179 passengers
 - Achieved 81% accuracy!
+
+Day 8: Model Evaluation complete!
+- Accuracy Score: 81%
+- Confusion Matrix: 145/179 correct
+- Classification Report: complete analysis
+- Model better at predicting deaths (83%)
+  than survivors (79%)
