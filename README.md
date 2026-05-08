@@ -1,84 +1,165 @@
-# Titanic Survival Prediction Project 🚢
+# 🚀 Madhu's Machine Learning Journey
 
-## What is this project?
-A machine learning project to predict 
-which passengers survived the Titanic disaster.
+> *From Python basics to real-world ML projects — built from scratch, committed every day.*
 
-## Technologies Used
-- Python
-- NumPy
-- Pandas
-- Jupyter Notebook
+[![GitHub](https://img.shields.io/badge/GitHub-Danammadhunika-blue?style=flat&logo=github)](https://github.com/Danammadhunika/ml-journey)
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat&logo=python)
+![Status](https://img.shields.io/badge/Status-Active-green?style=flat)
 
-## Project Structure
-ml_journey/
-├── datasets/          → CSV data files
-├── notebooks/         → Jupyter notebooks
-└── projects/          → Python files
+---
 
-## Daily Progress
-- Day 1: Learned NumPy arrays, applied to Titanic age data
-- Day 2: (update every day!)
+## 👩‍💻 About Me
 
-## What I Learned
-Day 1: Learned NumPy arrays, indexing 
-and basic operations. Applied to real 
-Titanic passenger age data.
+**Madhunika Danam** — Aspiring Data Scientist & ML Engineer  
+📍 Connecticut, USA | 🎓 STEM OPT  
+🔗 [GitHub](https://github.com/Danammadhunika/ml-journey)
 
-"I started with a small sample of 
-10 passengers to understand NumPy 
-operations before applying them 
-to the full 891 passenger dataset"
+---
 
-Day 2: Learned NumPy 2D arrays, 
-statistical operations (mean, max, min).
-Applied to real Titanic passenger data.
+## 🗂️ Repository Structure
 
-Day 3: Loaded Titanic dataset using Pandas.
-Explored data using head(), shape(), info(), 
-describe(). Cleaned missing values — filled 
-Age with mean, Embarked with mode, 
-dropped Cabin column. All columns now 
-have 0 missing values!
+```
+ML_journey/
+├── project_01_titanic/          → Survival Prediction (Complete ✅)
+│   ├── datasets/                → train.csv, test.csv
+│   ├── notebooks/               → titanic_exploration.ipynb
+│   ├── projects/                → final Python scripts
+│   └── notes/                   → PDF notes + PPT presentation
+│
+├── project_02_movie_recommender/ → Netflix-Style Recommender (In Progress 🔄)
+│   ├── datasets/                → MovieLens 100K data
+│   ├── notebooks/               → movie_recommender.ipynb
+│   └── projects/                → Streamlit web app
+│
+└── README.md                    → You are here!
+```
 
-Day 4: Data Analysis complete!
-- Found overall survival rate = 38%
-- Women survived more than men (74% vs 19%)
-- 1st class survived more than 3rd (63% vs 24%)
-- Children had highest survival rate (58%)
+---
 
-Day 5: Data Visualization complete!
-- Bar chart: Survived vs Died
-- Pie chart: Survival percentage
-- Bar chart: Survival rate by gender
-- Bar chart: Survival rate by class
-- Histogram: Age distribution
-- Bar chart: Survival rate by age group
-- Bar chart: Survival by gender and class
-Key finding: Female 1st class had 97% 
-survival rate vs Male 3rd class 14%!
+## 📊 Project 1: Titanic Survival Prediction ✅
 
-Day 6: Feature Engineering complete!
-- Converted Sex column: male=0, female=1
-- Converted Embarked column: C=0, Q=1, S=2
-- Dropped useless columns: Name, Ticket, AgeGroup
-- Dataset now has 9 numeric columns
-- Data is ready for ML model!
+### Overview
+A complete end-to-end machine learning project predicting survival of Titanic passengers using real historical data.
 
-Day 7: Machine Learning Model complete!
-- Created X (features) and y (target)
-- Split data: 80% train, 20% test
-- Built Logistic Regression model
-- Trained model on 712 passengers
-- Predicted survival on 179 passengers
-- Achieved 81% accuracy!
+### Dataset
+- **Source:** Kaggle — Titanic: Machine Learning from Disaster
+- **Size:** 891 passengers, 12 features
+- **Target:** Survived (0 = Died, 1 = Survived)
 
-Day 8: Model Evaluation complete!
-- Accuracy Score: 81%
-- Confusion Matrix: 145/179 correct
-- Classification Report: complete analysis
-- Model better at predicting deaths (83%)
-  than survivors (79%)
+### What I Did
+| Step | Task | Tool Used |
+|------|------|-----------|
+| 1 | Loaded and explored real passenger data | Pandas |
+| 2 | Cleaned missing values (Age, Embarked, Cabin) | Pandas |
+| 3 | Analyzed survival patterns | Pandas, NumPy |
+| 4 | Created 7 data visualizations | Matplotlib |
+| 5 | Feature engineering (text → numbers) | Pandas |
+| 6 | Built Logistic Regression model | Scikit-learn |
+| 7 | Evaluated model performance | Scikit-learn |
 
-Added: Complete ML Notes PDF and 
-Titanic Project Presentation PPT
+### Key Findings
+- Only **38.4%** of passengers survived
+- **74%** of women survived vs only **19%** of men
+- **1st class** had 63% survival vs **3rd class** 24%
+- **Female 1st class** had highest survival rate: **97%**
+- **Male 3rd class** had lowest survival rate: **14%**
+- Children had **58%** survival vs seniors **23%**
+
+### Model Results
+| Metric | Score |
+|--------|-------|
+| Accuracy | **81%** |
+| Precision (Died) | 83% |
+| Precision (Survived) | 79% |
+| Correct Predictions | 145/179 |
+
+### Technologies Used
+![Python](https://img.shields.io/badge/-Python-blue?style=flat&logo=python)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557c?style=flat)
+![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat&logo=scikit-learn)
+
+---
+
+## 🎬 Project 2: Netflix-Style Movie Recommender 🔄
+
+### Overview
+A recommendation engine built on the MovieLens 100K dataset using Collaborative Filtering, Content-Based Filtering, and a Hybrid approach — deployed as a Streamlit web app.
+
+### Dataset
+- **Source:** GroupLens — MovieLens 100K
+- **Size:** 100,000 ratings, 943 users, 1,682 movies
+- **Rating Scale:** 1 to 5 stars
+
+### Project Roadmap
+- [x] Day 1: Data loading & exploration
+- [ ] Day 2: Data visualization
+- [ ] Day 3: Collaborative Filtering
+- [ ] Day 4: Content-Based Filtering
+- [ ] Day 5: Hybrid Model
+- [ ] Day 6: Streamlit Web App
+- [ ] Day 7: Deploy & polish
+
+### Technologies Used
+![Python](https://img.shields.io/badge/-Python-blue?style=flat&logo=python)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy)
+![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat&logo=scikit-learn)
+![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit)
+
+---
+
+## 🛠️ Skills Learned
+
+| Category | Skills |
+|----------|--------|
+| **Languages** | Python |
+| **Data Analysis** | NumPy, Pandas |
+| **Visualization** | Matplotlib, Seaborn |
+| **Machine Learning** | Scikit-learn, Logistic Regression |
+| **Web App** | Streamlit (learning) |
+| **Version Control** | Git, GitHub |
+| **Tools** | Jupyter Notebook, Anaconda, VS Code |
+
+---
+
+## 📈 Daily Progress Log
+
+### Project 1 — Titanic
+| Day | What I Did |
+|-----|-----------|
+| Day 1 | NumPy arrays, indexing, applied to Titanic age data |
+| Day 2 | NumPy 2D arrays, statistical operations |
+| Day 3 | Loaded Titanic dataset, explored with Pandas, cleaned missing values |
+| Day 4 | Data analysis — survival patterns by gender, class, age |
+| Day 5 | Data visualization — 7 charts |
+| Day 6 | Feature engineering — converted text to numbers |
+| Day 7 | Built Logistic Regression model — 81% accuracy |
+| Day 8 | Model evaluation — confusion matrix, classification report |
+
+### Project 2 — Movie Recommender
+| Day | What I Did |
+|-----|-----------|
+| Day 1 | Loaded MovieLens data, explored ratings and movies |
+
+---
+
+## 🎯 Goals
+
+- ✅ Complete Titanic ML Project
+- 🔄 Build Movie Recommendation Engine
+- ⬜ Build Customer Churn Predictor
+- ⬜ Secure Data Science / ML role in the US
+- ⬜ Grow into independent ML Engineer
+
+---
+
+## 📬 Contact
+
+- **GitHub:** [Danammadhunika](https://github.com/Danammadhunika/ml-journey)
+- **Location:** Connecticut, USA
+
+---
+
+*Updated daily — every commit tells a story! 💪*
