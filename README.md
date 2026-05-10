@@ -95,7 +95,7 @@ A recommendation engine built on the MovieLens 100K dataset using Collaborative 
 ### Project Roadmap
 - [x] Day 1: Data loading & exploration
 - [x] Day 2: Data visualization
-- [ ] Day 3: Collaborative Filtering
+- [x] Day 3: Collaborative Filtering
 - [ ] Day 4: Content-Based Filtering
 - [ ] Day 5: Hybrid Model
 - [ ] Day 6: Streamlit Web App
