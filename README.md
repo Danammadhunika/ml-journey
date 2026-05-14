@@ -1,127 +1,216 @@
-🚀 Madhu's Machine Learning Journey
+# 🚀 Madhu's Machine Learning Journey
 
-From Python basics to real-world ML projects — built from scratch, committed every day.
+> *From Python basics to production ML apps — built from scratch, committed every day.*
 
-Show Image
-Show Image
-Show Image
+[![GitHub](https://img.shields.io/badge/GitHub-Danammadhunika-blue?style=flat&logo=github)](https://github.com/Danammadhunika/ml-journey)
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat&logo=python)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat)
+![Projects](https://img.shields.io/badge/Projects-2%20Complete-success?style=flat)
 
-👩‍💻 About Me
-Madhunika Danam — Aspiring Data Scientist & ML Engineer
-📍 Connecticut, USA | 🎓 STEM OPT
+---
+
+## 👩‍💻 About Me
+
+**Madhunika Danam** — Aspiring Data Scientist & ML Engineer
+📍 Connecticut, USA | 🎓 STEM OPT Student
 📧 danammadhunika@gmail.com
-🔗 GitHub
+🔗 [GitHub](https://github.com/Danammadhunika/ml-journey)
 
-🌐 Live Projects
-ProjectStatusLive DemoTech Stack🚢 Titanic Survival Prediction✅ CompleteComing SoonPython, Pandas, Scikit-learn🎬 Movie Recommender Engine✅ Complete▶️ Try Live App!Python, Streamlit, Scikit-learn
+I am actively building real-world machine learning projects from scratch to strengthen my portfolio and transition into a Data Science / ML role in the US. Every project in this repository was built step by step — no shortcuts, no templates.
 
-🗂️ Repository Structure
+---
+
+## 🌐 Live Projects
+
+| # | Project | Status | Live Demo | GitHub |
+|---|---------|--------|-----------|--------|
+| 1 | 🚢 Titanic Survival Prediction | ✅ Complete | Coming Soon | [View Code](https://github.com/Danammadhunika/ml-journey/tree/main/project_01_titanic) |
+| 2 | 🎬 Movie Recommendation Engine | ✅ Complete | [▶️ Try Live App!](https://madhu-movie-recommender.streamlit.app/) | [View Code](https://github.com/Danammadhunika/ml-journey/tree/main/project_02_movie_recommender) |
+
+---
+
+## 🗂️ Repository Structure
+
+```
 ML_journey/
-├── project_01_titanic/           → Titanic Survival Prediction (✅ Complete)
-│   ├── datasets/                 → train.csv, test.csv, gender_submission.csv
-│   ├── notebooks/                → titanic_exploration.ipynb
-│   ├── projects/                 → final Python scripts
-│   └── notes/                   → PDF notes + PPT presentation
+├── project_01_titanic/               ✅ Complete
+│   ├── datasets/                     → train.csv, test.csv
+│   ├── notebooks/                    → titanic_exploration.ipynb
+│   ├── projects/                     → final Python scripts
+│   └── notes/                        → PDF notes + PPT presentation
 │
-├── project_02_movie_recommender/ → Netflix-Style Recommender (✅ Complete)
-│   ├── datasets/                 → MovieLens 100K data
-│   ├── notebooks/                → movie_recommender.ipynb
-│   └── projects/                 → app.py (Streamlit web app)
+├── project_02_movie_recommender/     ✅ Complete
+│   ├── datasets/                     → MovieLens 100K data
+│   ├── notebooks/                    → movie_recommender.ipynb
+│   └── projects/                     → app.py (Streamlit web app)
 │
-└── README.md                     → You are here!
+└── README.md
+```
 
-📊 Project 1: Titanic Survival Prediction ✅
-Overview
-A complete end-to-end machine learning project predicting survival of Titanic passengers using real historical data.
-Dataset
+---
 
-Source: Kaggle — Titanic: Machine Learning from Disaster
-Size: 891 passengers, 12 features
-Target: Survived (0 = Died, 1 = Survived)
+## 📊 Project 1: Titanic Survival Prediction
 
-What I Did
-StepTaskTool Used1Loaded and explored real passenger dataPandas2Cleaned missing values (Age, Embarked, Cabin)Pandas3Analyzed survival patternsPandas, NumPy4Created 7 data visualizationsMatplotlib5Feature engineering — converted text to numbersPandas6Built Logistic Regression modelScikit-learn7Evaluated model performanceScikit-learn
-Key Findings
+**Status: ✅ Complete**
 
-Only 38.4% of passengers survived (342 out of 891)
-74% of women survived vs only 19% of men
-1st class had 63% survival vs 3rd class only 24%
-Female 1st class had highest survival rate: 97%
-Male 3rd class had lowest survival rate: 14%
-Children had 58% survival vs seniors only 23%
+> Predicting which passengers survived the Titanic using real historical data and machine learning.
 
-Model Results
-MetricScoreAlgorithmLogistic RegressionTrain/Test Split80% / 20%Accuracy81%Precision (Died)83%Precision (Survived)79%Correct Predictions145 / 179
-Technologies Used
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
+### Dataset
+| Property | Value |
+|----------|-------|
+| Source | Kaggle — Titanic: Machine Learning from Disaster |
+| Size | 891 passengers, 12 features |
+| Target | Survived (0 = Died, 1 = Survived) |
 
-🎬 Project 2: Netflix-Style Movie Recommender ✅
-🌐 Live Demo: ▶️ Click Here to Try the App!
-Overview
-A recommendation engine built on the MovieLens 100K dataset using three different algorithms — deployed as a live Streamlit web application.
-Dataset
+### What I Built
+| Step | Task | Tool |
+|------|------|------|
+| 1 | Loaded & explored real passenger data | Pandas |
+| 2 | Cleaned missing values — Age (177), Cabin (687), Embarked (2) | Pandas |
+| 3 | Analyzed survival patterns by gender, class, age | Pandas, NumPy |
+| 4 | Created 7 data visualizations | Matplotlib |
+| 5 | Feature engineering — converted text columns to numbers | Pandas |
+| 6 | Built Logistic Regression model | Scikit-learn |
+| 7 | Evaluated with confusion matrix & classification report | Scikit-learn |
 
-Source: GroupLens — MovieLens 100K
-Size: 100,000 ratings, 943 users, 1,682 movies
-Rating Scale: 1 to 5 stars
-Most Rated Movie: Star Wars (1977) with 583 ratings
+### Key Findings
+| Analysis | Finding |
+|----------|---------|
+| Overall survival | Only **38.4%** survived (342 of 891) |
+| By gender | Female **74%** vs Male **19%** |
+| By class | 1st Class **63%** vs 3rd Class **24%** |
+| Best case | Female 1st Class → **97%** survival |
+| Worst case | Male 3rd Class → **14%** survival |
+| By age | Children **58%** vs Seniors **23%** |
 
-Three Recommendation Algorithms Built
-AlgorithmHow it worksExampleCollaborative FilteringFinds users with similar taste"Users like you also liked..."Content Based FilteringFinds similar movies by genre"Because you liked Action..."Hybrid ModelCombines both methodsBest of both worlds!
-What I Did
-StepTaskTool Used1Loaded and explored 100K ratingsPandas2Created data visualizationsMatplotlib, Seaborn3Built Collaborative FilteringScikit-learn, Cosine Similarity4Built Content Based FilteringScikit-learn, Genre Analysis5Built Hybrid Recommendation ModelCombined approach6Built and deployed Streamlit web appStreamlit
-Key Findings
+### Model Performance
+| Metric | Score |
+|--------|-------|
+| **Overall Accuracy** | **81%** |
+| Precision — Died | 83% |
+| Precision — Survived | 79% |
+| Correct Predictions | 145 / 179 |
+| Confusion Matrix | [[90, 15], [19, 55]] |
 
-Most popular movie: Star Wars (1977) with 583 ratings
-Average rating across all movies: 3.53 / 5
-605 movies have 50+ ratings (reliable recommendations)
-Normal distribution of ratings — most movies rated 2.5 to 4.0
+### Technologies
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557c?style=flat)
+![Scikit--learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat&logo=scikit-learn)
 
-Project Roadmap
+---
 
- Day 1: Data loading & exploration
- Day 2: Data visualization
- Day 3: Collaborative Filtering
- Day 4: Content-Based Filtering
- Day 5: Hybrid Model
- Day 6: Streamlit Web App
- Day 7: Deploy to Streamlit Cloud
+## 🎬 Project 2: Netflix-Style Movie Recommendation Engine
 
-Technologies Used
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
+**Status: ✅ Complete | 🌐 [Live Demo](https://madhu-movie-recommender.streamlit.app/)**
 
-🛠️ Skills Learned
-CategorySkillsLanguagesPythonData AnalysisNumPy, PandasVisualizationMatplotlib, SeabornMachine LearningScikit-learn, Logistic Regression, Cosine SimilarityRecommendation SystemsCollaborative Filtering, Content Based, HybridWeb AppStreamlitDeploymentStreamlit CloudVersion ControlGit, GitHub (daily commits)ToolsJupyter Notebook, Anaconda, VS Code
+> A recommendation engine using three algorithms — Collaborative Filtering, Content-Based Filtering, and a Hybrid Model — deployed as a live Streamlit web app.
 
-📈 Daily Progress Log
-Project 1 — Titanic
-DayWhat I DidStatusDay 1NumPy arrays, indexing, applied to Titanic age data✅Day 2NumPy 2D arrays, statistical operations✅Day 3Loaded Titanic dataset, EDA, cleaned missing values✅Day 4Data analysis — survival patterns by gender, class, age✅Day 5Data visualization — 7 charts created✅Day 6Feature engineering — converted text to numbers✅Day 7Built Logistic Regression model — 81% accuracy✅Day 8Model evaluation — confusion matrix, classification report✅
-Project 2 — Movie Recommender
-DayWhat I DidStatusDay 1Loaded MovieLens 100K data, explored ratings and movies✅Day 2Data visualization — rating distribution, top movies✅Day 3Collaborative Filtering — cosine similarity, recommendations✅Day 4Content Based Filtering — genre similarity✅Day 5Hybrid Model — combined both algorithms✅Day 6Streamlit web app built and running✅Day 7Deployed to Streamlit Cloud — live app!✅
+### Dataset
+| Property | Value |
+|----------|-------|
+| Source | GroupLens — MovieLens 100K |
+| Ratings | 100,000 |
+| Users | 943 |
+| Movies | 1,682 |
+| Rating Scale | 1 to 5 stars |
+| Most Rated Movie | Star Wars (1977) — 583 ratings |
 
-🎯 Goals
+### Three Recommendation Algorithms Built
 
-✅ Complete Titanic ML Project
-✅ Build Movie Recommendation Engine
-✅ Deploy live web application
-⬜ Build Customer Churn Predictor
-⬜ Secure Data Science / ML role in the US
-⬜ Grow into independent ML Engineer
+| Algorithm | How It Works | Key Concept |
+|-----------|-------------|-------------|
+| Collaborative Filtering | Finds users with similar taste | Cosine Similarity |
+| Content-Based Filtering | Finds movies with similar genres | Genre Matrix |
+| Hybrid Model | Combines both approaches | Best of both worlds |
 
+### What I Built
+| Step | Task | Tool |
+|------|------|------|
+| 1 | Loaded & explored 100K ratings | Pandas |
+| 2 | Created visualizations — top movies, rating distribution | Matplotlib, Seaborn |
+| 3 | Built User-Movie matrix (943×1682) | Pandas pivot_table |
+| 4 | Calculated user similarity scores | Cosine Similarity |
+| 5 | Built Collaborative Filtering function | Scikit-learn |
+| 6 | Built Content-Based Filtering on genres | Scikit-learn |
+| 7 | Combined both into Hybrid Model | Python |
+| 8 | Deployed live web app | Streamlit Cloud |
 
-📬 Contact
+### Live App Features
+- 🎛️ Enter any User ID (1–943)
+- 🎚️ Slider for number of recommendations (1–20)
+- 🎬 Click button → get personalized movie recommendations instantly!
+- 🌐 Accessible from anywhere in the world
 
-GitHub: Danammadhunika
-Email: danammadhunika@gmail.com
-Location: Connecticut, USA
+### Technologies
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy)
+![Scikit--learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat&logo=scikit-learn)
+![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit)
 
+---
 
-Updated daily — every commit tells a story! 💪
+## 🛠️ Skills & Tools
+
+| Category | Skills |
+|----------|--------|
+| **Languages** | Python 3.11 |
+| **Data Analysis** | NumPy, Pandas |
+| **Visualization** | Matplotlib, Seaborn |
+| **Machine Learning** | Scikit-learn, Logistic Regression, Cosine Similarity |
+| **Recommendation Systems** | Collaborative Filtering, Content-Based, Hybrid |
+| **Web Apps** | Streamlit |
+| **Version Control** | Git, GitHub (daily commits) |
+| **Environment** | Anaconda, Jupyter Notebook, VS Code |
+
+---
+
+## 📈 Daily Progress
+
+### Project 1 — Titanic Survival Prediction
+| Day | Topic | Status |
+|-----|-------|--------|
+| Day 1 | NumPy arrays, indexing, applied to Titanic age data | ✅ |
+| Day 2 | NumPy 2D arrays, statistical operations | ✅ |
+| Day 3 | Pandas — loaded dataset, EDA, cleaned missing values | ✅ |
+| Day 4 | Data analysis — survival patterns by gender, class, age | ✅ |
+| Day 5 | Data visualization — 7 charts created | ✅ |
+| Day 6 | Feature engineering — text to numbers | ✅ |
+| Day 7 | Logistic Regression model — 81% accuracy | ✅ |
+| Day 8 | Model evaluation — confusion matrix, classification report | ✅ |
+
+### Project 2 — Movie Recommendation Engine
+| Day | Topic | Status |
+|-----|-------|--------|
+| Day 1 | Loaded MovieLens 100K data, explored ratings & movies | ✅ |
+| Day 2 | Data visualization — rating distribution, top movies | ✅ |
+| Day 3 | Collaborative Filtering — user similarity matrix | ✅ |
+| Day 4 | Content-Based Filtering — genre similarity | ✅ |
+| Day 5 | Hybrid Model — combined both algorithms | ✅ |
+| Day 6 | Streamlit web app — built interface | ✅ |
+| Day 7 | Deployed to Streamlit Cloud — live app! | ✅ |
+
+---
+
+## 🎯 Goals
+
+- [x] Complete Titanic ML Project
+- [x] Build Movie Recommendation Engine with live deployment
+- [ ] Build Customer Churn Predictor with Business Dashboard
+- [ ] Learn SQL for data querying
+- [ ] Secure a Data Science / ML Analyst role in the US
+- [ ] Grow into an independent ML Engineer
+
+---
+
+## 📬 Contact
+
+- **GitHub:** [github.com/Danammadhunika](https://github.com/Danammadhunika/ml-journey)
+- **Email:** danammadhunika@gmail.com
+- **Location:** Connecticut, USA
+
+---
+
+*Every commit in this repository represents a real learning session. Built from scratch — no shortcuts. 💪*
