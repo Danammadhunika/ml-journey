@@ -5,13 +5,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Load data
 ratings = pd.read_csv(
-    r"C:\Users\danam\OneDrive\Desktop\ML_journey\project_02_movie_recommender\datasets\u.data",
+    "project_02_movie_recommender/datasets/u.data",
     sep='\t',
     names=['user_id', 'movie_id', 'rating', 'timestamp']
 )
 
 movies = pd.read_csv(
-    r"C:\Users\danam\OneDrive\Desktop\ML_journey\project_02_movie_recommender\datasets\u.item",
+    "project_02_movie_recommender/datasets/u.item",
     sep='|',
     encoding='latin-1',
     usecols=[0, 1],
