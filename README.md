@@ -12,7 +12,17 @@
 
 **Madhunika Danam** — Aspiring Data Scientist & ML Engineer  
 📍 Connecticut, USA | 🎓 STEM OPT  
-🔗 [GitHub](https://github.com/Danammadhunika/ml-journey)
+🔗 [GitHub](https://github.com/Danammadhunika/ml-journey) | 
+📧 danammadhunika@gmail.com
+
+---
+
+## 🌐 Live Projects
+
+| Project | Status | Live Demo | Tech Stack |
+|---------|--------|-----------|------------|
+| 🚢 Titanic Survival Prediction | ✅ Complete | Coming Soon | Python, Pandas, Scikit-learn |
+| 🎬 Movie Recommender Engine | ✅ Complete | [▶️ Try Live App!](https://madhu-movie-recommender.streamlit.app/) | Python, Streamlit, Scikit-learn |
 
 ---
 
@@ -82,7 +92,9 @@ A complete end-to-end machine learning project predicting survival of Titanic pa
 
 ---
 
-## 🎬 Project 2: Netflix-Style Movie Recommender 🔄
+### 🎬 Project 2: Netflix-Style Movie Recommender ✅
+**Status: ✅ Complete**
+**🌐 Live Demo: [Click Here to Try the App!](https://madhu-movie-recommender.streamlit.app/)**
 
 ### Overview
 A recommendation engine built on the MovieLens 100K dataset using Collaborative Filtering, Content-Based Filtering, and a Hybrid approach — deployed as a Streamlit web app.
@@ -99,7 +111,7 @@ A recommendation engine built on the MovieLens 100K dataset using Collaborative 
 - [x] Day 4: Content-Based Filtering
 - [x] Day 5: Hybrid Model
 - [x] Day 6: Streamlit Web App
-- [ ] Day 7: Deploy & polish
+- [x] Day 7: Deploy & polish
 
 ### Technologies Used
 ![Python](https://img.shields.io/badge/-Python-blue?style=flat&logo=python)
@@ -148,7 +160,7 @@ A recommendation engine built on the MovieLens 100K dataset using Collaborative 
 ## 🎯 Goals
 
 - ✅ Complete Titanic ML Project
-- 🔄 Build Movie Recommendation Engine
+- ✅ Build Movie Recommendation Engine
 - ⬜ Build Customer Churn Predictor
 - ⬜ Secure Data Science / ML role in the US
 - ⬜ Grow into independent ML Engineer
