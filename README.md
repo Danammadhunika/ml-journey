@@ -36,7 +36,7 @@ ML_journey/
 │   ├── projects/                → final Python scripts
 │   └── notes/                   → PDF notes + PPT presentation
 │
-├── project_02_movie_recommender/ → Netflix-Style Recommender (In Progress 🔄)
+├── project_02_movie_recommender/ → Netflix-Style Recommender (In Progress ✅)
 │   ├── datasets/                → MovieLens 100K data
 │   ├── notebooks/               → movie_recommender.ipynb
 │   └── projects/                → Streamlit web app
