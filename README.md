@@ -198,10 +198,6 @@ ML_journey/
 
 - [x] Complete Titanic ML Project
 - [x] Build Movie Recommendation Engine with live deployment
-- [ ] Build Customer Churn Predictor with Business Dashboard
-- [ ] Learn SQL for data querying
-- [ ] Secure a Data Science / ML Analyst role in the US
-- [ ] Grow into an independent ML Engineer
 
 ---
 
