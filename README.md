@@ -237,7 +237,7 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 1 | SQLite database setup, loaded 541,909 rows, first SQL queries | ✅ |
-| Day 2 | WHERE, AND, OR, NULL handling — filtering data | 🔄 |
+| Day 2 | WHERE, AND, OR, NULL handling — filtering data | ✅ |
 | Day 3 | ORDER BY, LIMIT, DISTINCT, text functions | ⬜ |
 | Day 4 | GROUP BY, COUNT, SUM, AVG — aggregations | ⬜ |
 | Day 5 | HAVING clause, WHERE vs HAVING | ⬜ |
