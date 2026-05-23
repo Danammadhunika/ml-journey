@@ -238,6 +238,7 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Day 7 | Deployed to Streamlit Cloud — live app! | ✅ |
 
 ### Project 3 — E-commerce Sales & Customer Analytics
+WEEK 1
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 1 | SQLite database setup, loaded 541,909 rows, first SQL queries | ✅ |
@@ -246,8 +247,18 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Day 4 | GROUP BY, COUNT, SUM, AVG — aggregations | ✅ |
 | Day 5 | HAVING clause, WHERE vs HAVING | ✅ |
 | Day 6 | Business questions answered with SQL | ✅ |
-| Day 7 | Review, GitHub cleanup, notes update | ⬜ |
+| Day 7 | Review, GitHub cleanup, notes update | ✅ |
 
+WEEK 2
+| Day | Topic | Status |
+|-----|-------|--------|
+| Day 8 | INNER JOIN — connected orders and country_info tables | ✅ |
+| Day 9 | LEFT JOIN | ⬜ |
+| Day 10 | Subqueries | ⬜ |
+| Day 11 | CASE WHEN | ⬜ |
+| Day 12 | Date Functions | ⬜ |
+| Day 13 | Project application day | ⬜ |
+| Day 14 | Review + GitHub | ⬜ |
 ---
 
 ## 🎯 Goals
