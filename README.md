@@ -168,6 +168,10 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Customers | Which customers haven't bought in 90+ days? (Churn) |
 | Countries | Which countries place the most orders? |
 | Countries | Which country generates the most revenue? |
+| Sales | 24.93% of orders are guest checkouts |
+| Products | PAPER CRAFT #1 product — 80,995 units sold |
+| Customers | Customer 14646 = VIP, £279,489 spent |
+| Countries | Netherlands highest avg order £120 vs UK £25 |
 
 ### SQL Concepts Covered
 | Week | Concepts |
@@ -188,7 +192,7 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | 6 | Presented findings as a Data Analyst would | PowerPoint |
 
 ### Technologies
-![Python](https://img.shields.io/badge/-Python-blue) ![SQL](https://img.shields.io/badge/-SQL-lightgrey) ![SQLite](https://img.shields.io/badge/-SQLite-blue) ![Pandas](https://img.shields.io/badge/-Pandas-green) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-red)
+![Python](https://img.shields.io/badge/-Python-blue) ![SQL](https://img.shields.io/badge/-SQL-lightgrey) ![SQLite](https://img.shields.io/badge/-SQLite-blue) ![Pandas](https://img.shields.io/badge/-Pandas-green) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-red)![Seaborn](https://img.shields.io/badge/-Seaborn-blue)
 
 ---
 
@@ -241,7 +245,7 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Day 3 | ORDER BY, LIMIT, DISTINCT, text functions | ✅ |
 | Day 4 | GROUP BY, COUNT, SUM, AVG — aggregations | ✅ |
 | Day 5 | HAVING clause, WHERE vs HAVING | ✅ |
-| Day 6 | Business questions answered with SQL | ⬜ |
+| Day 6 | Business questions answered with SQL | ✅ |
 | Day 7 | Review, GitHub cleanup, notes update | ⬜ |
 
 ---
