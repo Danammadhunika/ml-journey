@@ -253,7 +253,7 @@ WEEK 2
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 8 | INNER JOIN — connected orders and country_info tables | ✅ |
-| Day 9 | LEFT JOIN | ⬜ |
+| Day 9 | LEFT JOIN | ✅ |
 | Day 10 | Subqueries | ⬜ |
 | Day 11 | CASE WHEN | ⬜ |
 | Day 12 | Date Functions | ⬜ |
