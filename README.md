@@ -255,8 +255,8 @@ WEEK 2
 | Day 8 | INNER JOIN — connected orders and country_info tables | ✅ |
 | Day 9 | LEFT JOIN | ✅ |
 | Day 10 | Subqueries | ✅ |
-| Day 11 | CASE WHEN | ⬜ |
-| Day 12 | Date Functions | ⬜ |
+| Day 11 | CASE WHEN | ✅ |
+| Day 12 | Date Functions | ✅ |
 | Day 13 | Project application day | ⬜ |
 | Day 14 | Review + GitHub | ⬜ |
 ---
