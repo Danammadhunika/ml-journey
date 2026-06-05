@@ -263,8 +263,8 @@ WEEK 2
 WEEK 3
 | Day | Topic | Status |
 |-----|-------|--------|
-| Day 15 | CTEs — WITH clause | ⬜ |
-| Day 16 | Window Functions — ROW_NUMBER, RANK | ⬜ |
+| Day 15 | CTEs — WITH clause | ✅ |
+| Day 16 | Window Functions — ROW_NUMBER, RANK | ✅ |
 | Day 17 | LAG and LEAD functions | ⬜ |
 | Day 18 | Python + SQLite connection | ⬜ |
 | Day 19 | Pandas + SQL + Visualizations | ⬜ |
