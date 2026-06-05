@@ -257,8 +257,8 @@ WEEK 2
 | Day 10 | Subqueries | ✅ |
 | Day 11 | CASE WHEN | ✅ |
 | Day 12 | Date Functions | ✅ |
-| Day 13 | Project application day | ⬜ |
-| Day 14 | Review + GitHub | ⬜ |
+| Day 13 | Project application day | ✅ |
+| Day 14 | Review + GitHub | ✅ |
 ---
 
 ## 🎯 Goals
