@@ -19,9 +19,9 @@ I am actively building real-world machine learning projects from scratch to stre
 
 | # | Project | Status | Live Demo | GitHub |
 |---|---------|--------|-----------|--------|
-| 1 | 🚢 Titanic Survival Prediction | ✅ Complete | Coming Soon | View Code |
+| 1 | 🚢 Titanic Survival Prediction | ✅ Complete | View Code
 | 2 | 🎬 Movie Recommendation Engine | ✅ Complete | [▶️ Try Live App!](https://madhu-movie-recommender.streamlit.app) | View Code |
-| 3 | 🛒 E-commerce Sales & Customer Analytics | 🔄 In Progress | Coming Soon | View Code |
+| 3 | 🛒 E-commerce Sales & Customer Analytics | ✅ Complete | View Code
 
 ---
 
@@ -40,13 +40,15 @@ ML_journey/
 │   ├── notebooks/                    → movie_recommender.ipynb
 │   └── projects/                     → app.py (Streamlit web app)
 │
-├── project_03_ecommerce_sql/         🔄 In Progress
+├── project_03_ecommerce_sql/         ✅ Complete
 │   ├── datasets/                     → online_retail.csv, ecommerce.db
 │   ├── notebooks/                    → ecommerce_sql_analysis.ipynb
 │   └── notes/                        → PDF notes + PPT presentation
 │
 └── README.md
 ```
+
+---
 
 ---
 
@@ -143,7 +145,7 @@ A recommendation engine using three algorithms — Collaborative Filtering, Cont
 ---
 
 ## 🛒 Project 3: E-commerce Sales & Customer Analytics
-**Status: 🔄 In Progress**
+**Status: ✅ Complete**
 
 Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover sales trends, top products, customer behavior, and revenue insights — thinking and working like a real Data Analyst.
 
@@ -157,42 +159,38 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Countries | 38 countries worldwide |
 | Database | SQLite (ecommerce.db) |
 
-### Business Questions Being Answered
-| Category | Question |
+### Key Findings
+| Category | Finding |
 |----------|---------|
-| Sales | What is total revenue for the year? |
-| Sales | Which month had the highest sales? |
-| Products | Which products sell the most? |
-| Products | Which products generate the most revenue? |
-| Customers | Who are the top 20 customers? |
-| Customers | Which customers haven't bought in 90+ days? (Churn) |
-| Countries | Which countries place the most orders? |
-| Countries | Which country generates the most revenue? |
-| Sales | 24.93% of orders are guest checkouts |
-| Products | PAPER CRAFT #1 product — 80,995 units sold |
-| Customers | Customer 14646 = VIP, £279,489 spent |
-| Countries | Netherlands highest avg order £120 vs UK £25 |
+| Total Revenue | £9.7M across all countries |
+| Peak Month | November 2011 — £1,509,496 |
+| Top Country | UK — 89.9% of total revenue |
+| Top VIP Customer | Customer 14646 — £280,206 spent |
+| Star Product | REGENCY CAKESTAND — £174,484 revenue |
+| Guest Checkouts | 24.93% shop without registering |
+| Highest Avg Order | Netherlands — £120 per order vs UK £25 |
+| Performance Tiers | UK = Top, 5 countries = Mid, 32 = Low |
 
 ### SQL Concepts Covered
 | Week | Concepts |
 |------|---------|
 | Week 1 | SELECT, WHERE, ORDER BY, LIMIT, GROUP BY, COUNT, DISTINCT |
 | Week 2 | JOINs, Subqueries, HAVING, CASE WHEN, Date Functions |
-| Week 3 | Window Functions, CTEs, Python + SQL Integration |
-| Week 4 | Full Analysis, Visualizations, Portfolio Presentation |
+| Week 3 | CTEs, Window Functions, LAG/LEAD, Python + SQL Integration |
+| Week 4 | Full Analysis, Visualizations, Business Insights |
 
-### What I Am Building
+### What I Built
 | Step | Task | Tool |
 |------|------|------|
 | 1 | Loaded 541,909 rows into SQLite database | Python, SQLite |
 | 2 | Wrote SQL queries to explore data | SQL |
 | 3 | Answered real business questions with SQL | SQL, Pandas |
-| 4 | Built visualizations of key insights | Matplotlib, Seaborn |
-| 5 | Combined SQL + Python for full analysis | Python |
-| 6 | Presented findings as a Data Analyst would | PowerPoint |
+| 4 | Built 4 summary tables saved to database | SQLite, Pandas |
+| 5 | Built 3 professional visualizations | Matplotlib |
+| 6 | Extracted full business insights as Data Analyst | Python |
 
 ### Technologies
-![Python](https://img.shields.io/badge/-Python-blue) ![SQL](https://img.shields.io/badge/-SQL-lightgrey) ![SQLite](https://img.shields.io/badge/-SQLite-blue) ![Pandas](https://img.shields.io/badge/-Pandas-green) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-red)![Seaborn](https://img.shields.io/badge/-Seaborn-blue)
+![Python](https://img.shields.io/badge/-Python-blue) ![SQL](https://img.shields.io/badge/-SQL-lightgrey) ![SQLite](https://img.shields.io/badge/-SQLite-blue) ![Pandas](https://img.shields.io/badge/-Pandas-green) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-red) ![Seaborn](https://img.shields.io/badge/-Seaborn-blue)
 
 ---
 
@@ -238,7 +236,7 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Day 7 | Deployed to Streamlit Cloud — live app! | ✅ |
 
 ### Project 3 — E-commerce Sales & Customer Analytics
-WEEK 1
+#### WEEK 1
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 1 | SQLite database setup, loaded 541,909 rows, first SQL queries | ✅ |
@@ -249,33 +247,34 @@ WEEK 1
 | Day 6 | Business questions answered with SQL | ✅ |
 | Day 7 | Review, GitHub cleanup, notes update | ✅ |
 
-WEEK 2
+#### WEEK 2
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 8 | INNER JOIN — connected orders and country_info tables | ✅ |
-| Day 9 | LEFT JOIN | ✅ |
-| Day 10 | Subqueries | ✅ |
-| Day 11 | CASE WHEN | ✅ |
-| Day 12 | Date Functions | ✅ |
-| Day 13 | Project application day | ✅ |
+| Day 9 | LEFT JOIN — all 38 countries revealed | ✅ |
+| Day 10 | Subqueries — nested queries | ✅ |
+| Day 11 | CASE WHEN — if/else logic in SQL | ✅ |
+| Day 12 | Date Functions — strftime, substr | ✅ |
+| Day 13 | Project application day — 8 business queries | ✅ |
 | Day 14 | Review + GitHub | ✅ |
 
-WEEK 3
+#### WEEK 3
 | Day | Topic | Status |
 |-----|-------|--------|
-| Day 15 | CTEs — WITH clause | ✅ |
-| Day 16 | Window Functions — ROW_NUMBER, RANK | ✅ |
-| Day 17 | LAG and LEAD functions | ✅ |
-| Day 18 | Python + SQLite connection | ✅ |
-| Day 19 | Pandas + SQL + Visualizations | ✅ |
-| Day 20 | Full Analysis Day | ✅ |
-| Day 21 | Review + GitHub | ✅ |
+| Day 15 | CTEs — WITH clause, single and multiple CTEs | ✅ |
+| Day 16 | Window Functions — ROW_NUMBER, RANK, DENSE_RANK, PARTITION BY | ✅ |
+| Day 17 | LAG and LEAD functions — monthly revenue trends | ✅ |
+| Day 18 | Python + SQLite — to_sql, sqlite_master, summary tables | ✅ |
+| Day 19 | Pandas + SQL + Visualizations — 4 professional charts | ✅ |
+| Day 20 | Full Analysis Day — VIP customers, trends, country tiers | ✅ |
+| Day 21 | Review + GitHub — Project 3 Complete! | ✅ |
+
 ---
 
 ## 🎯 Goals
 - [x] Complete Titanic ML Project
 - [x] Build Movie Recommendation Engine with live deployment
-- [ ] Complete E-commerce SQL Analytics Project
+- [x] Complete E-commerce SQL Analytics Project
 - [ ] Learn Advanced ML (Random Forest, Feature Engineering)
 - [ ] Build AI/LLM Application
 - [ ] Become an AI Engineer 🚀
