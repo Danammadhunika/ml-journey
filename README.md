@@ -19,10 +19,9 @@ I am actively building real-world machine learning projects from scratch to stre
 
 | # | Project | Status | Live Demo | GitHub |
 |---|---------|--------|-----------|--------|
-| 1 | 🚢 Titanic Survival Prediction | ✅ Complete | View Code
+| 1 | 🚢 Titanic Survival Prediction | ✅ Complete | Coming Soon | [View Code](https://github.com/Danammadhunika/ml-journey/tree/main/project_01_titanic) |
 | 2 | 🎬 Movie Recommendation Engine | ✅ Complete | [▶️ Try Live App!](https://madhu-movie-recommender.streamlit.app) | View Code |
-| 3 | 🛒 E-commerce Sales & Customer Analytics | ✅ Complete | View Code
-
+| 3 | 🛒 E-commerce Sales & Customer Analytics | ✅ Complete | Coming Soon | [View Code](https://github.com/Danammadhunika/ml-journey/tree/main/project_03_ecommerce_sql) |
 ---
 
 ## 🗂️ Repository Structure
@@ -47,8 +46,6 @@ ML_journey/
 │
 └── README.md
 ```
-
----
 
 ---
 
