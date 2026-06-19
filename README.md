@@ -1,193 +1,32 @@
-# 🚀 Madhu's Machine Learning Journey
-From Python basics to production ML apps — built from scratch, committed every day.
+<div align="center">
 
-![GitHub](https://img.shields.io/badge/GitHub-Danammadhunika-blue) ![Python](https://img.shields.io/badge/Python-3.11-green) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+# 🚀 Madhu's Machine Learning Journey
+### From zero Python knowledge to deployed ML applications — built from scratch, one commit at a time.
+
+![GitHub](https://img.shields.io/badge/GitHub-Danammadhunika-blue) ![Python](https://img.shields.io/badge/Python-3.11-green) ![Status](https://img.shields.io/badge/Status-Actively%20Building-brightgreen) ![Projects](https://img.shields.io/badge/Projects-4-orange)
+
+</div>
 
 ---
 
 ## 👩‍💻 About Me
-**Madhunika Danam** — Aspiring Data Scientist & ML Engineer
-📍 Connecticut, USA | 🎓 STEM OPT Student
-📧 danammadhunika@gmail.com
-🔗 [GitHub](https://github.com/Danammadhunika)
 
-I am actively building real-world machine learning projects from scratch to strengthen my portfolio and transition into a Data Science / ML role in the US. Every project in this repository was built step by step — no shortcuts, no templates.
+**Madhunika Danam** — Data Analyst · Python Developer · ML Engineer
+📍 Connecticut, USA &nbsp;|&nbsp; 🎓 M.S. Computer Science, Sacred Heart University &nbsp;|&nbsp; STEM OPT Authorized
+📧 danammadhunika@gmail.com &nbsp;|&nbsp; 🔗 [LinkedIn](https://linkedin.com/in/danammadhunika) &nbsp;|&nbsp; 💻 [GitHub](https://github.com/Danammadhunika)
 
----
-
-## 🌐 Live Projects
-
-| # | Project | Status | Live Demo | GitHub |
-|---|---------|--------|-----------|--------|
-| 1 | 🚢 Titanic Survival Prediction | ✅ Complete | Coming Soon | [View Code](https://github.com/Danammadhunika/ml-journey/tree/main/project_01_titanic) |
-| 2 | 🎬 Movie Recommendation Engine | ✅ Complete | [▶️ Try Live App!](https://madhu-movie-recommender.streamlit.app) | View Code |
-| 3 | 🛒 E-commerce Sales & Customer Analytics | ✅ Complete | Coming Soon | [View Code](https://github.com/Danammadhunika/ml-journey/tree/main/project_03_ecommerce_sql) |
----
-
-## 🗂️ Repository Structure
-
-```
-ML_journey/
-├── project_01_titanic/               ✅ Complete
-│   ├── datasets/                     → train.csv, test.csv
-│   ├── notebooks/                    → titanic_exploration.ipynb
-│   ├── projects/                     → final Python scripts
-│   └── notes/                        → PDF notes + PPT presentation
-│
-├── project_02_movie_recommender/     ✅ Complete
-│   ├── datasets/                     → MovieLens 100K data
-│   ├── notebooks/                    → movie_recommender.ipynb
-│   └── projects/                     → app.py (Streamlit web app)
-│
-├── project_03_ecommerce_sql/         ✅ Complete
-│   ├── datasets/                     → online_retail.csv, ecommerce.db
-│   ├── notebooks/                    → ecommerce_sql_analysis.ipynb
-│   └── notes/                        → PDF notes + PPT presentation
-│
-└── README.md
-```
+I build real, end-to-end data and ML projects from scratch — no templates, no shortcuts. Every project below is independently built, documented, and (where possible) deployed live for anyone to try. Currently expanding into backend development and AI integration with FastAPI and LLM APIs.
 
 ---
 
-## 📊 Project 1: Titanic Survival Prediction
-**Status: ✅ Complete**
+## 🌐 Projects at a Glance
 
-Predicting which passengers survived the Titanic using real historical data and machine learning.
-
-### Dataset
-| Property | Value |
-|----------|-------|
-| Source | Kaggle — Titanic: Machine Learning from Disaster |
-| Size | 891 passengers, 12 features |
-| Target | Survived (0 = Died, 1 = Survived) |
-
-### What I Built
-| Step | Task | Tool |
-|------|------|------|
-| 1 | Loaded & explored real passenger data | Pandas |
-| 2 | Cleaned missing values — Age (177), Cabin (687), Embarked (2) | Pandas |
-| 3 | Analyzed survival patterns by gender, class, age | Pandas, NumPy |
-| 4 | Created 7 data visualizations | Matplotlib |
-| 5 | Feature engineering — converted text columns to numbers | Pandas |
-| 6 | Built Logistic Regression model | Scikit-learn |
-| 7 | Evaluated with confusion matrix & classification report | Scikit-learn |
-
-### Key Findings
-| Analysis | Finding |
-|----------|---------|
-| Overall survival | Only 38.4% survived (342 of 891) |
-| By gender | Female 74% vs Male 19% |
-| By class | 1st Class 63% vs 3rd Class 24% |
-| Best case | Female 1st Class → 97% survival |
-| Worst case | Male 3rd Class → 14% survival |
-| By age | Children 58% vs Seniors 23% |
-
-### Model Performance
-| Metric | Score |
-|--------|-------|
-| Overall Accuracy | 81% |
-| Precision — Died | 83% |
-| Precision — Survived | 79% |
-| Correct Predictions | 145 / 179 |
-| Confusion Matrix | [[90, 15], [19, 55]] |
-
-### Technologies
-![Python](https://img.shields.io/badge/-Python-blue) ![NumPy](https://img.shields.io/badge/-NumPy-orange) ![Pandas](https://img.shields.io/badge/-Pandas-green) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-red) ![Scikit--learn](https://img.shields.io/badge/-Scikit--learn-yellow)
-
----
-
-## 🎬 Project 2: Netflix-Style Movie Recommendation Engine
-**Status: ✅ Complete | 🌐 [Live Demo](https://madhu-movie-recommender.streamlit.app)**
-
-A recommendation engine using three algorithms — Collaborative Filtering, Content-Based Filtering, and a Hybrid Model — deployed as a live Streamlit web app.
-
-### Dataset
-| Property | Value |
-|----------|-------|
-| Source | GroupLens — MovieLens 100K |
-| Ratings | 100,000 |
-| Users | 943 |
-| Movies | 1,682 |
-| Rating Scale | 1 to 5 stars |
-| Most Rated Movie | Star Wars (1977) — 583 ratings |
-
-### Three Recommendation Algorithms Built
-| Algorithm | How It Works | Key Concept |
-|-----------|-------------|-------------|
-| Collaborative Filtering | Finds users with similar taste | Cosine Similarity |
-| Content-Based Filtering | Finds movies with similar genres | Genre Matrix |
-| Hybrid Model | Combines both approaches | Best of both worlds |
-
-### What I Built
-| Step | Task | Tool |
-|------|------|------|
-| 1 | Loaded & explored 100K ratings | Pandas |
-| 2 | Created visualizations — top movies, rating distribution | Matplotlib, Seaborn |
-| 3 | Built User-Movie matrix (943×1682) | Pandas pivot_table |
-| 4 | Calculated user similarity scores | Cosine Similarity |
-| 5 | Built Collaborative Filtering function | Scikit-learn |
-| 6 | Built Content-Based Filtering on genres | Scikit-learn |
-| 7 | Combined both into Hybrid Model | Python |
-| 8 | Deployed live web app | Streamlit Cloud |
-
-### Live App Features
-- 🎛️ Enter any User ID (1–943)
-- 🎚️ Slider for number of recommendations (1–20)
-- 🎬 Click button → get personalized movie recommendations instantly!
-- 🌐 Accessible from anywhere in the world
-
-### Technologies
-![Python](https://img.shields.io/badge/-Python-blue) ![Pandas](https://img.shields.io/badge/-Pandas-green) ![NumPy](https://img.shields.io/badge/-NumPy-orange) ![Scikit--learn](https://img.shields.io/badge/-Scikit--learn-yellow) ![Streamlit](https://img.shields.io/badge/-Streamlit-red)
-
----
-
-## 🛒 Project 3: E-commerce Sales & Customer Analytics
-**Status: ✅ Complete**
-
-Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover sales trends, top products, customer behavior, and revenue insights — thinking and working like a real Data Analyst.
-
-### Dataset
-| Property | Value |
-|----------|-------|
-| Source | UCI Machine Learning Repository — Online Retail |
-| Transactions | 541,909 rows |
-| Period | December 2010 — December 2011 |
-| Company | Real UK-based online gift shop |
-| Countries | 38 countries worldwide |
-| Database | SQLite (ecommerce.db) |
-
-### Key Findings
-| Category | Finding |
-|----------|---------|
-| Total Revenue | £9.7M across all countries |
-| Peak Month | November 2011 — £1,509,496 |
-| Top Country | UK — 89.9% of total revenue |
-| Top VIP Customer | Customer 14646 — £280,206 spent |
-| Star Product | REGENCY CAKESTAND — £174,484 revenue |
-| Guest Checkouts | 24.93% shop without registering |
-| Highest Avg Order | Netherlands — £120 per order vs UK £25 |
-| Performance Tiers | UK = Top, 5 countries = Mid, 32 = Low |
-
-### SQL Concepts Covered
-| Week | Concepts |
-|------|---------|
-| Week 1 | SELECT, WHERE, ORDER BY, LIMIT, GROUP BY, COUNT, DISTINCT |
-| Week 2 | JOINs, Subqueries, HAVING, CASE WHEN, Date Functions |
-| Week 3 | CTEs, Window Functions, LAG/LEAD, Python + SQL Integration |
-| Week 4 | Full Analysis, Visualizations, Business Insights |
-
-### What I Built
-| Step | Task | Tool |
-|------|------|------|
-| 1 | Loaded 541,909 rows into SQLite database | Python, SQLite |
-| 2 | Wrote SQL queries to explore data | SQL |
-| 3 | Answered real business questions with SQL | SQL, Pandas |
-| 4 | Built 4 summary tables saved to database | SQLite, Pandas |
-| 5 | Built 3 professional visualizations | Matplotlib |
-| 6 | Extracted full business insights as Data Analyst | Python |
-
-### Technologies
-![Python](https://img.shields.io/badge/-Python-blue) ![SQL](https://img.shields.io/badge/-SQL-lightgrey) ![SQLite](https://img.shields.io/badge/-SQLite-blue) ![Pandas](https://img.shields.io/badge/-Pandas-green) ![Matplotlib](https://img.shields.io/badge/-Matplotlib-red) ![Seaborn](https://img.shields.io/badge/-Seaborn-blue)
+| # | Project | Tech Focus | Status | Live Demo |
+|---|---------|-----------|--------|-----------|
+| 1 | 🚢 **Passenger Survival Risk Model** | Python · Scikit-learn · Logistic Regression | ✅ Complete | [Code →](https://github.com/Danammadhunika/ml-journey/tree/main/project_01_titanic) |
+| 2 | 🎬 **Personalized Movie Recommendation Engine** | Python · Collaborative & Content-Based Filtering | ✅ Complete | **[▶️ Try Live App](https://madhu-movie-recommender.streamlit.app)** |
+| 3 | 🛒 **E-commerce Revenue Intelligence Platform** | SQL · CTEs · Window Functions · SQLite | ✅ Complete | [Code →](https://github.com/Danammadhunika/ml-journey/tree/main/project_03_ecommerce_sql) |
+| 4 | 🤖 **AI-Powered Resume Analyzer** | FastAPI · LLM API · Prompt Engineering | 🚧 In Progress | Coming Soon |
 
 ---
 
@@ -195,21 +34,37 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 
 | Category | Skills |
 |----------|--------|
-| Languages | Python 3.11, SQL |
-| Data Analysis | NumPy, Pandas |
-| Databases | SQLite, SQL Querying |
-| Visualization | Matplotlib, Seaborn |
-| Machine Learning | Scikit-learn, Logistic Regression, Cosine Similarity |
-| Recommendation Systems | Collaborative Filtering, Content-Based, Hybrid |
-| Web Apps | Streamlit |
-| Version Control | Git, GitHub (daily commits) |
-| Environment | Anaconda, Jupyter Notebook |
+| **Languages** | Python 3.11, SQL |
+| **Data Analysis** | NumPy, Pandas |
+| **Databases** | SQLite — SELECT, JOINs, Subqueries, CTEs, Window Functions, LAG/LEAD |
+| **Machine Learning** | Scikit-learn, Logistic Regression, Cosine Similarity |
+| **Recommendation Systems** | Collaborative Filtering, Content-Based Filtering, Hybrid Models |
+| **Visualization** | Matplotlib, Seaborn |
+| **Web & APIs** | Streamlit (deployed live app), FastAPI, RESTful APIs *(in progress)* |
+| **AI Integration** | LLM APIs, Prompt Engineering *(in progress)* |
+| **Tools** | Git, GitHub (daily commits), VS Code, Jupyter Notebook, Anaconda |
 
 ---
 
-## 📈 Daily Progress
+## 📊 Project 1 — Passenger Survival Risk Model
+**Status: ✅ Complete**
 
-### Project 1 — Titanic Survival Prediction
+Built a classification model to predict passenger survival using the classic Titanic dataset — my first end-to-end ML project.
+
+| Property | Value |
+|----------|-------|
+| Dataset | Kaggle Titanic — 891 passengers, 12 features |
+| Model | Logistic Regression |
+| Accuracy | **81%** (145/179 correct) |
+| Key Insight | Female survival rate 74% vs Male 19%; 1st Class 63% vs 3rd Class 24% |
+
+**What I built:** Cleaned 177+ missing Age values → encoded categorical features → conducted EDA → engineered features → trained and evaluated a Logistic Regression classifier using a confusion matrix and classification report.
+
+`Python` `Pandas` `NumPy` `Matplotlib` `Scikit-learn`
+
+<details>
+<summary>📅 View daily build log</summary>
+
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 1 | NumPy arrays, indexing, applied to Titanic age data | ✅ |
@@ -221,7 +76,28 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Day 7 | Logistic Regression model — 81% accuracy | ✅ |
 | Day 8 | Model evaluation — confusion matrix, classification report | ✅ |
 
-### Project 2 — Movie Recommendation Engine
+</details>
+
+---
+
+## 🎬 Project 2 — Personalized Movie Recommendation Engine
+**Status: ✅ Complete &nbsp;|&nbsp; 🌐 [Try the Live App](https://madhu-movie-recommender.streamlit.app)**
+
+A Netflix-style recommendation engine using three algorithms, deployed as a live, publicly accessible web app.
+
+| Property | Value |
+|----------|-------|
+| Dataset | MovieLens 100K — 100,000 ratings, 943 users, 1,682 movies |
+| Algorithms | Collaborative Filtering, Content-Based Filtering, Hybrid Model |
+| Deployment | Live on Streamlit Cloud |
+
+**What I built:** Built a 943×943 user similarity matrix using Cosine Similarity → built genre-based content filtering → combined both into a hybrid model → deployed as an interactive web app where users enter an ID and instantly receive personalized recommendations.
+
+`Python` `Pandas` `Scikit-learn` `Seaborn` `Streamlit`
+
+<details>
+<summary>📅 View daily build log</summary>
+
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 1 | Loaded MovieLens 100K data, explored ratings & movies | ✅ |
@@ -232,57 +108,132 @@ Analyzing 541,909 real e-commerce transactions using SQL and Python to uncover s
 | Day 6 | Streamlit web app — built interface | ✅ |
 | Day 7 | Deployed to Streamlit Cloud — live app! | ✅ |
 
-### Project 3 — E-commerce Sales & Customer Analytics
-#### WEEK 1
+</details>
+
+---
+
+## 🛒 Project 3 — E-commerce Revenue Intelligence Platform
+**Status: ✅ Complete**
+
+Advanced SQL analysis on over half a million real e-commerce transactions — built and queried entirely like a working Data Analyst.
+
+| Property | Value |
+|----------|-------|
+| Dataset | UCI Online Retail — 541,909 transactions, 38 countries |
+| Database | SQLite |
+| Total Revenue Analyzed | £9.7M |
+
+**Key findings:**
+
+| Category | Finding |
+|----------|---------|
+| Peak Month | November 2011 — £1,509,496 |
+| Top Country | UK — 89.9% of total revenue (concentration risk flagged) |
+| Top VIP Customer | Customer 14646 — £280,206 spent |
+| Star Product | REGENCY CAKESTAND — £174,484 revenue |
+| Guest Checkouts | 24.93% — flagged as retention opportunity |
+| Highest AOV | Netherlands — £120/order vs UK £25/order |
+
+**What I built:** Loaded 541,909 rows into SQLite → wrote SQL across SELECT/JOIN/Subqueries/CASE WHEN → applied CTEs, Window Functions (DENSE_RANK, PARTITION BY), and LAG/LEAD to rank VIP customers and track revenue trends → built 6 professional visualizations → delivered business recommendations.
+
+`Python` `SQL` `SQLite` `Pandas` `Matplotlib` `Seaborn`
+
+<details>
+<summary>📅 View daily build log (28 days)</summary>
+
+**Week 1 — SQL Foundations**
 | Day | Topic | Status |
 |-----|-------|--------|
-| Day 1 | SQLite database setup, loaded 541,909 rows, first SQL queries | ✅ |
-| Day 2 | WHERE, AND, OR, NULL handling — filtering data | ✅ |
+| Day 1 | SQLite setup, loaded 541,909 rows, first queries | ✅ |
+| Day 2 | WHERE, AND, OR, NULL handling | ✅ |
 | Day 3 | ORDER BY, LIMIT, DISTINCT, text functions | ✅ |
-| Day 4 | GROUP BY, COUNT, SUM, AVG — aggregations | ✅ |
+| Day 4 | GROUP BY, COUNT, SUM, AVG | ✅ |
 | Day 5 | HAVING clause, WHERE vs HAVING | ✅ |
 | Day 6 | Business questions answered with SQL | ✅ |
-| Day 7 | Review, GitHub cleanup, notes update | ✅ |
+| Day 7 | Review + GitHub | ✅ |
 
-#### WEEK 2
+**Week 2 — JOINs, Subqueries, CASE WHEN**
 | Day | Topic | Status |
 |-----|-------|--------|
-| Day 8 | INNER JOIN — connected orders and country_info tables | ✅ |
+| Day 8 | INNER JOIN | ✅ |
 | Day 9 | LEFT JOIN — all 38 countries revealed | ✅ |
 | Day 10 | Subqueries — nested queries | ✅ |
-| Day 11 | CASE WHEN — if/else logic in SQL | ✅ |
+| Day 11 | CASE WHEN | ✅ |
 | Day 12 | Date Functions — strftime, substr | ✅ |
 | Day 13 | Project application day — 8 business queries | ✅ |
 | Day 14 | Review + GitHub | ✅ |
 
-#### WEEK 3
+**Week 3 — Advanced SQL + Python Integration**
 | Day | Topic | Status |
 |-----|-------|--------|
-| Day 15 | CTEs — WITH clause, single and multiple CTEs | ✅ |
+| Day 15 | CTEs — WITH clause | ✅ |
 | Day 16 | Window Functions — ROW_NUMBER, RANK, DENSE_RANK, PARTITION BY | ✅ |
 | Day 17 | LAG and LEAD functions — monthly revenue trends | ✅ |
-| Day 18 | Python + SQLite — to_sql, sqlite_master, summary tables | ✅ |
-| Day 19 | Pandas + SQL + Visualizations — 4 professional charts | ✅ |
+| Day 18 | Python + SQLite — to_sql, summary tables | ✅ |
+| Day 19 | Pandas + SQL + Visualizations — 4 charts | ✅ |
 | Day 20 | Full Analysis Day — VIP customers, trends, country tiers | ✅ |
 | Day 21 | Review + GitHub — Project 3 Complete! | ✅ |
 
+**Week 4 — Portfolio Finishing**
+| Day | Topic | Status |
+|-----|-------|--------|
+| Day 22 | Notebook cleanup | ✅ |
+| Day 23 | 6 professional visualizations | ✅ |
+| Day 24 | Business insights and recommendations | ✅ |
+| Day 25 | Presentation deck created | ✅ |
+| Day 26 | Complete notes document | ✅ |
+| Day 27 | Resume updated | ✅ |
+| Day 28 | Cover letter + LinkedIn fully updated | ✅ |
+
+</details>
+
 ---
 
-## 🎯 Goals
-- [x] Complete Titanic ML Project
-- [x] Build Movie Recommendation Engine with live deployment
-- [x] Complete E-commerce SQL Analytics Project
-- [ ] Learn Advanced ML (Random Forest, Feature Engineering)
-- [ ] Build AI/LLM Application
-- [ ] Become an AI Engineer 🚀
+## 🤖 Project 4 — AI-Powered Resume Analyzer
+**Status: 🚧 In Progress**
+
+Building a full-stack application that uses an LLM API to analyze a resume against a job description and suggest improvements — my first project combining backend development with AI integration.
+
+| Property | Value |
+|----------|-------|
+| Backend | FastAPI |
+| AI Layer | LLM API + Prompt Engineering |
+| Frontend | Streamlit |
+| Goal | Deployed, end-to-end AI application |
+
+**Tech stack in progress:** FastAPI · Python · LLM API · Prompt Engineering · JSON · Streamlit
+
+<details>
+<summary>📅 View daily build log</summary>
+
+| Day | Topic | Status |
+|-----|-------|--------|
+| Day 1 | Project structure, virtual environment, FastAPI + Uvicorn installed | ✅ |
+
+*Updated as the project progresses.*
+
+</details>
+
+---
+
+## 🎯 Roadmap
+
+- [x] Passenger Survival Risk Model — Logistic Regression
+- [x] Personalized Movie Recommendation Engine — Deployed
+- [x] E-commerce Revenue Intelligence Platform — Advanced SQL
+- [ ] AI-Powered Resume Analyzer — FastAPI + LLM API *(in progress)*
+- [ ] Advanced ML — Random Forest, Feature Engineering
+- [ ] RAG Systems + Vector Databases
+- [ ] AI Engineer 🚀
 
 ---
 
 ## 📬 Contact
-- **GitHub:** [github.com/Danammadhunika](https://github.com/Danammadhunika)
-- **Email:** danammadhunika@gmail.com
-- **Location:** Connecticut, USA
 
----
+📧 **Email:** danammadhunika@gmail.com &nbsp;|&nbsp; 💼 **LinkedIn:** [linkedin.com/in/danammadhunika](https://linkedin.com/in/danammadhunika) &nbsp;|&nbsp; 📍 **Location:** Connecticut, USA
+
+<div align="center">
 
 *Every commit in this repository represents a real learning session. Built from scratch — no shortcuts. 💪*
+
+</div>
