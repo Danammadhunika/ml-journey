@@ -1,0 +1,14 @@
+# Jupyter checkpoint files
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+
+# Video and large media files
+*.mp4
+*.mov
+
+# System files
+.DS_Store
+Thumbs.db
