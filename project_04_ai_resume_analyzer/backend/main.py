@@ -4,8 +4,16 @@ from fastapi import FastAPI
 # Import datetime so we can check the current date/time later
 from datetime import datetime
 
+# Import BaseModel from Pydantic for data validation
+from pydantic import BaseModel
+
 # Build the actual app (the "empty house") using the FastAPI blueprint
 app = FastAPI()
+
+# Define the shape of data we expect to receive
+class ResumeRequest(BaseModel):
+    resume_text: str
+    job_description: str
 
 # Decorator: register this route for GET requests at the address "/"
 @app.get("/")
@@ -33,3 +41,10 @@ def greet(name: str):              # ONLY parameter here: the name from the URL
 
     # combine greeting + name into one final message and send it back
     return {"message": f"{greeting}, {name}"}
+
+@app.post("/analyze")
+def analyze_resume(request: ResumeRequest):
+          return {
+         "resume_text": request.resume_text,
+          "job_description": request.job_description
+           }
