@@ -209,6 +209,10 @@ Building a full-stack application that uses an LLM API to analyze a resume again
 | Day | Topic | Status |
 |-----|-------|--------|
 | Day 1 | Project structure, virtual environment, FastAPI + Uvicorn installed | ✅ |
+| Day 2 | First FastAPI route (`/`) — GET requests, decorators, JSON responses, tested via Swagger docs | ✅ |
+| Day 3 | Path parameters (`/hello/{name}`) — dynamic routes, `datetime`, time-based greeting logic | ✅ |
+| Day 4 | POST requests, Pydantic BaseModel, ResumeRequest class with resume_text and job_description fields, tested via Swagger docs | ✅ |
+| Day 5 | Anthropic API integrated — Claude analyzes resume vs job description, returns match score, missing keywords, and improvement suggestion | ✅ |
 
 *Updated as the project progresses.*
 

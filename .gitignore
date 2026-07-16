@@ -12,3 +12,6 @@ venv/
 # System files
 .DS_Store
 Thumbs.db
+
+# API Key File
+.env
