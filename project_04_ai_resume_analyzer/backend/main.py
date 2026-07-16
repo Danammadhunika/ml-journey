@@ -15,6 +15,9 @@ from pydantic import BaseModel
 # We need this to safely read our API key from the .env file
 import os
 
+# Bring in json — lets us convert Claude's text response into a Python dictionary
+import json
+
 # Bring in the anthropic package — this is what lets our app talk to Claude
 # We installed this with: pip install anthropic
 import anthropic
@@ -105,30 +108,43 @@ def analyze_resume(request: ResumeRequest):
     # This is like texting Claude: "hey, compare these two things for me"
     message = client.messages.create(
         model="claude-sonnet-4-6",  # which Claude model to use (Sonnet = best balance)
-        max_tokens=1024,             # maximum number of words Claude can respond with
+        max_tokens=1024,            # maximum number of words Claude can respond with
         messages=[
             {
-                "role": "user",      # "user" means this message is coming from us
+                "role": "user",     # "user" means this message is coming from us
                 "content": f"""
-                You are a resume expert. Compare this resume to the job description and give:
-                1. A match score out of 100
-                2. A list of missing keywords
-                3. One suggestion to improve the resume
+You are a resume expert. Compare the resume to the job description below.
 
-                Resume:
-                {request.resume_text}
+Respond ONLY with a JSON object. No extra text, no markdown, no code fences, no backticks, no explanation outside the JSON.
 
-                Job Description:
-                {request.job_description}
-                """
-                # f-string again — fills in the actual resume and job description text
+Return exactly this structure:
+{{
+  "match_score": <number between 0 and 100>,
+  "missing_keywords": ["keyword1", "keyword2", "keyword3"],
+  "suggestion": "<one clear sentence suggestion>"
+}}
+
+Resume:
+{request.resume_text}
+
+Job Description:
+{request.job_description}
+"""
+                # f-string: fills in actual resume and job description text
                 # This is called a PROMPT — the instruction we give to Claude
+                # Double curly braces {{ }} = literal { } characters in f-strings
+                # Single {variable} = fill in the variable's value
             }
         ]
     )
 
-    # Claude's response comes back as a list of content blocks
-    # message.content[0] = the first (and usually only) block
-    # .text = the actual text of Claude's response
-    # We wrap it in a dictionary and return it as JSON
-    return {"analysis": message.content[0].text}
+    # Get the raw text response from Claude
+    raw = message.content[0].text
+
+    # Convert Claude's JSON text into a real Python dictionary
+    # json.loads() = "load string" — parses text into structured data
+    parsed = json.loads(raw)
+
+    # Return the structured dictionary directly
+    # FastAPI will convert it to clean JSON automatically
+    return parsed
