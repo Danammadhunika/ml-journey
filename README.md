@@ -213,6 +213,8 @@ Building a full-stack application that uses an LLM API to analyze a resume again
 | Day 3 | Path parameters (`/hello/{name}`) — dynamic routes, `datetime`, time-based greeting logic | ✅ |
 | Day 4 | POST requests, Pydantic BaseModel, ResumeRequest class with resume_text and job_description fields, tested via Swagger docs | ✅ |
 | Day 5 | Anthropic API integrated — Claude analyzes resume vs job description, returns match score, missing keywords, and improvement suggestion | ✅ |
+| Day 6 | Prompt engineering — rewrote prompt to force structured JSON output (match_score, missing_keywords, suggestion), added json.loads() parsing | ✅ |
+| Day 7 | Built Streamlit frontend — full stack app working end to end (resume input → FastAPI → Claude → results displayed) | ✅ |
 
 *Updated as the project progresses.*
 
