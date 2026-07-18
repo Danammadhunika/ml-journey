@@ -108,7 +108,7 @@ def analyze_resume(request: ResumeRequest):
     # This is like texting Claude: "hey, compare these two things for me"
     message = client.messages.create(
         model="claude-sonnet-4-6",  # which Claude model to use (Sonnet = best balance)
-        max_tokens=1024,            # maximum number of words Claude can respond with
+        max_tokens=2048,            # increased from 1024 — handles longer resumes
         messages=[
             {
                 "role": "user",     # "user" means this message is coming from us
@@ -141,10 +141,26 @@ Job Description:
     # Get the raw text response from Claude
     raw = message.content[0].text
 
-    # Convert Claude's JSON text into a real Python dictionary
-    # json.loads() = "load string" — parses text into structured data
-    parsed = json.loads(raw)
+    # Strip any accidental whitespace from the beginning and end
+    raw = raw.strip()
 
-    # Return the structured dictionary directly
-    # FastAPI will convert it to clean JSON automatically
-    return parsed
+    # Remove markdown code fences if Claude added them anyway
+    # Sometimes Claude wraps JSON in ```json ... ``` despite instructions
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]  # get content between first pair of backticks
+        if raw.startswith("json"):
+            raw = raw[4:]          # remove the word "json" after the backticks
+        raw = raw.strip()          # clean up any remaining whitespace
+
+    # If Claude returned an empty response, return a friendly error
+    if not raw:
+        return {"error": "Claude returned an empty response. Please try again."}
+
+    # Try to parse Claude's JSON text into a real Python dictionary
+    # json.loads() = "load string" — converts JSON text to Python dictionary
+    try:
+        parsed = json.loads(raw)
+        return parsed  # return the clean structured data
+    except json.JSONDecodeError:
+        # If JSON parsing fails, return the raw text so we can debug
+        return {"error": f"Could not parse response: {raw[:200]}"}
