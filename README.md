@@ -217,6 +217,7 @@ Building a full-stack application that uses an LLM API to analyze a resume again
 | Day 7 | Built Streamlit frontend — full stack app working end to end (resume input → FastAPI → Claude → results displayed) | ✅ |
 | Day 8 | Built Streamlit frontend + added error handling (ConnectionError, Timeout, empty input validation) | ✅ |
 | Day 9 | PDF resume upload added using pdfplumber, JSON parsing fix for code fences, error handling improved | ✅ |
+| Day 10 | UI polish — progress bar, color-coded match score, keyword badge styling, dividers, footer | ✅ |
 
 *Updated as the project progresses.*
 
