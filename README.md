@@ -190,18 +190,47 @@ Advanced SQL analysis on over half a million real e-commerce transactions — bu
 ---
 
 ## 🤖 Project 4 — AI-Powered Resume Analyzer
-**Status: 🚧 In Progress**
+**Status: 🚧 In Progress — Deploying Soon**
 
-Building a full-stack application that uses an LLM API to analyze a resume against a job description and suggest improvements — my first project combining backend development with AI integration.
+A full-stack AI application that analyzes a resume against a job description using Claude AI, returning a match score, missing keywords, and improvement suggestions.
 
 | Property | Value |
 |----------|-------|
-| Backend | FastAPI |
-| AI Layer | LLM API + Prompt Engineering |
+| Backend | FastAPI + Python |
+| AI Layer | Anthropic Claude API (claude-sonnet-4-6) |
 | Frontend | Streamlit |
-| Goal | Deployed, end-to-end AI application |
+| File Upload | pdfplumber — extracts text from PDF resumes |
+| Deployment | Render (backend) + Streamlit Cloud (frontend) |
 
-**Tech stack in progress:** FastAPI · Python · LLM API · Prompt Engineering · JSON · Streamlit
+**What it does:**
+- Upload a PDF resume or paste resume text
+- Paste any job description
+- Get an AI-powered match score (0–100) with color coding
+- See exactly which keywords are missing from your resume
+- Get one specific, actionable suggestion to improve your resume
+
+**Tech concepts demonstrated:**
+- REST API design with FastAPI (GET + POST routes, Pydantic validation)
+- Prompt engineering — structured JSON output from LLM
+- Full stack integration — Streamlit frontend calling FastAPI backend
+- PDF text extraction with pdfplumber
+- Error handling (ConnectionError, Timeout, empty input validation)
+- Environment variable management (.env + python-dotenv)
+- API security — key stored safely, never exposed in code
+
+**How to run locally:**
+
+Terminal 1 — Backend:
+```bash
+cd backend
+uvicorn main:app --reload
+```
+
+Terminal 2 — Frontend:
+```bash
+cd frontend
+streamlit run app.py
+```
 
 <details>
 <summary>📅 View daily build log</summary>
@@ -211,13 +240,15 @@ Building a full-stack application that uses an LLM API to analyze a resume again
 | Day 1 | Project structure, virtual environment, FastAPI + Uvicorn installed | ✅ |
 | Day 2 | First FastAPI route (`/`) — GET requests, decorators, JSON responses, tested via Swagger docs | ✅ |
 | Day 3 | Path parameters (`/hello/{name}`) — dynamic routes, `datetime`, time-based greeting logic | ✅ |
-| Day 4 | POST requests, Pydantic BaseModel, ResumeRequest class with resume_text and job_description fields, tested via Swagger docs | ✅ |
+| Day 4 | POST route + Pydantic BaseModel (ResumeRequest with resume_text and job_description fields) | ✅ |
 | Day 5 | Anthropic API integrated — Claude analyzes resume vs job description, returns match score, missing keywords, and improvement suggestion | ✅ |
 | Day 6 | Prompt engineering — rewrote prompt to force structured JSON output (match_score, missing_keywords, suggestion), added json.loads() parsing | ✅ |
 | Day 7 | Built Streamlit frontend — full stack app working end to end (resume input → FastAPI → Claude → results displayed) | ✅ |
-| Day 8 | Built Streamlit frontend + added error handling (ConnectionError, Timeout, empty input validation) | ✅ |
+| Day 8 | Error handling added — ConnectionError, Timeout, empty input validation | ✅ |
 | Day 9 | PDF resume upload added using pdfplumber, JSON parsing fix for code fences, error handling improved | ✅ |
 | Day 10 | UI polish — progress bar, color-coded match score, keyword badge styling, dividers, footer | ✅ |
+| Day 11 | End to end testing — all 5 scenarios tested and passing | ✅ |
+| Day 12 | Final README writeup, code cleanup | ✅ |
 
 *Updated as the project progresses.*
 
