@@ -1,3 +1,26 @@
+**RIGHT NOW USES**
+
+
+**For FAST API-Uvicorn Activation**
+cd C:\\Users\\danam\\OneDrive\\Desktop\\ML\_journey\\project\_04\_ai\_resume\_analyzer\\backend
+
+..\\venv\\Scripts\\Activate.ps1
+
+uvicorn main:app --reload
+
+
+
+**For Run Streamlit**
+cd C:\\Users\\danam\\OneDrive\\Desktop\\ML\_journey\\project\_04\_ai\_resume\_analyzer\\frontend
+
+..\\venv\\Scripts\\Activate.ps1
+
+streamlit run app.py
+
+
+
+
+
 **PYTHON VS CODE SHORTCUTS**
 
 Muilt-Cursor       = Alt + Click anywhere
@@ -8,19 +31,6 @@ Thick black block  = Inster key
 
 Coming to next line = Shift + Enter
 
-
-
-**EVERYDAY TO CLAUDE AI**
-
-OK today is date is ??? ??? 2026, lets start day ???
-
-1\. Updated README and push for Day ???
-
-2\. Applied for ??? jobs today
-
-3\. Opened Jupyter Notebook
-
-4\. Ran all the cells
 
 
 **IN JUPYTER NOTEBOOK FROM TERMINAL**
