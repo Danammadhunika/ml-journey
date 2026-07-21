@@ -74,14 +74,15 @@ if st.button("🔍 Analyze Resume", use_container_width=True):
     else:
         with st.spinner("Analyzing your resume with AI..."):
             try:
-                # Send resume text and job description to FastAPI
+                # Send resume text and job description to FastAPI on Render
+                # This now points to the live Render backend, not localhost
                 response = requests.post(
-                    "http://127.0.0.1:8000/analyze",  # FastAPI route
+                    "https://ml-journey.onrender.com/analyze",  # live Render URL
                     json={
                         "resume_text": resume_text,        # text from PDF or paste box
                         "job_description": job_description  # job description from text box
                     },
-                    timeout=30  # give up after 30 seconds
+                    timeout=60  # increased to 60 seconds — Render free tier can be slow
                 )
 
                 # Check if FastAPI returned success (200) or error
@@ -150,12 +151,12 @@ if st.button("🔍 Analyze Resume", use_container_width=True):
                         st.caption("Analysis powered by Claude AI · Built by Madhunika Danam")
 
             except requests.exceptions.ConnectionError:
-                # FastAPI is not running
-                st.error("❌ Cannot connect to the backend. Make sure FastAPI is running.")
+                # Cannot connect to Render backend
+                st.error("❌ Cannot connect to the backend. Please try again in a moment.")
 
             except requests.exceptions.Timeout:
-                # FastAPI took too long
-                st.error("⏱️ The request timed out. Please try again.")
+                # Render free tier can be slow on first request
+                st.error("⏱️ The request timed out. Render free tier may be waking up — please try again in 30 seconds.")
 
             except Exception as e:
                 # Any other unexpected error
