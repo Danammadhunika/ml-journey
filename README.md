@@ -15,18 +15,18 @@
 📍 Connecticut, USA &nbsp;|&nbsp; 🎓 M.S. Computer Science, Sacred Heart University &nbsp;|&nbsp; STEM OPT Authorized
 📧 danammadhunika@gmail.com &nbsp;|&nbsp; 🔗 [LinkedIn](https://linkedin.com/in/danammadhunika) &nbsp;|&nbsp; 💻 [GitHub](https://github.com/Danammadhunika)
 
-I build real, end-to-end data and ML projects from scratch — no templates, no shortcuts. Every project below is independently built, documented, and (where possible) deployed live for anyone to try. Currently expanding into backend development and AI integration with FastAPI and LLM APIs.
+I build real, end-to-end data and ML projects from scratch — no templates, no shortcuts. Every project is independently built, documented, and deployed live. Currently specializing in AI integration, backend development with FastAPI, and LLM-powered applications.
 
 ---
 
 ## 🌐 Projects at a Glance
 
-| # | Project | Tech Focus | Status | Live Demo |
+| # | Project | Tech Stack | Status | Live Demo |
 |---|---------|-----------|--------|-----------|
 | 1 | 🚢 **Passenger Survival Risk Model** | Python · Scikit-learn · Logistic Regression | ✅ Complete | [Code →](https://github.com/Danammadhunika/ml-journey/tree/main/project_01_titanic) |
-| 2 | 🎬 **Personalized Movie Recommendation Engine** | Python · Collaborative & Content-Based Filtering | ✅ Complete | **[▶️ Try Live App](https://madhu-movie-recommender.streamlit.app)** |
+| 2 | 🎬 **Personalized Movie Recommendation Engine** | Python · Collaborative & Content-Based Filtering · Streamlit | ✅ Complete | **[▶️ Try Live App](https://madhu-movie-recommender.streamlit.app)** |
 | 3 | 🛒 **E-commerce Revenue Intelligence Platform** | SQL · CTEs · Window Functions · SQLite | ✅ Complete | [Code →](https://github.com/Danammadhunika/ml-journey/tree/main/project_03_ecommerce_sql) |
-| 4 | 🤖 **AI-Powered Resume Analyzer** | FastAPI · LLM API · Prompt Engineering | 🚧 In Progress | Coming Soon |
+| 4 | 🤖 **AI-Powered Resume Analyzer** | FastAPI · Anthropic Claude API · Prompt Engineering · Streamlit | ✅ Complete | **[▶️ Try Live App](https://madhu-resume-analyzer.streamlit.app)** |
 
 ---
 
@@ -40,8 +40,9 @@ I build real, end-to-end data and ML projects from scratch — no templates, no 
 | **Machine Learning** | Scikit-learn, Logistic Regression, Cosine Similarity |
 | **Recommendation Systems** | Collaborative Filtering, Content-Based Filtering, Hybrid Models |
 | **Visualization** | Matplotlib, Seaborn |
-| **Web & APIs** | Streamlit (deployed live app), FastAPI, RESTful APIs *(in progress)* |
-| **AI Integration** | LLM APIs, Prompt Engineering *(in progress)* |
+| **Web & APIs** | FastAPI, Streamlit, RESTful APIs, Pydantic, Uvicorn |
+| **AI Integration** | Anthropic Claude API, LLM APIs, Prompt Engineering, JSON output structuring |
+| **Deployment** | Render (FastAPI backend), Streamlit Cloud (frontend) |
 | **Tools** | Git, GitHub (daily commits), VS Code, Jupyter Notebook, Anaconda |
 
 ---
@@ -190,47 +191,50 @@ Advanced SQL analysis on over half a million real e-commerce transactions — bu
 ---
 
 ## 🤖 Project 4 — AI-Powered Resume Analyzer
-**Status: 🚧 In Progress — Deploying Soon**
+**Status: ✅ Complete &nbsp;|&nbsp; 🌐 [Try the Live App](https://madhu-resume-analyzer.streamlit.app)**
 
-A full-stack AI application that analyzes a resume against a job description using Claude AI, returning a match score, missing keywords, and improvement suggestions.
+A production-ready, full-stack AI application that analyzes a resume against a job description using Claude AI — returning a match score, missing keywords, and actionable improvement suggestions. Built from scratch in 14 days.
 
 | Property | Value |
 |----------|-------|
-| Backend | FastAPI + Python |
+| Backend | FastAPI + Python — deployed on Render |
 | AI Layer | Anthropic Claude API (claude-sonnet-4-6) |
-| Frontend | Streamlit |
+| Frontend | Streamlit — deployed on Streamlit Cloud |
 | File Upload | pdfplumber — extracts text from PDF resumes |
-| Deployment | Render (backend) + Streamlit Cloud (frontend) |
+| Live Backend | https://ml-journey.onrender.com |
+| Live Frontend | https://madhu-resume-analyzer.streamlit.app |
 
 **What it does:**
 - Upload a PDF resume or paste resume text
-- Paste any job description
-- Get an AI-powered match score (0–100) with color coding
+- Paste any job description from any job board
+- Get an AI-powered match score (0–100) with color-coded progress bar
 - See exactly which keywords are missing from your resume
-- Get one specific, actionable suggestion to improve your resume
+- Get one specific, actionable suggestion to improve your resume for that role
 
 **Tech concepts demonstrated:**
-- REST API design with FastAPI (GET + POST routes, Pydantic validation)
-- Prompt engineering — structured JSON output from LLM
-- Full stack integration — Streamlit frontend calling FastAPI backend
+- REST API design with FastAPI (GET + POST routes, Pydantic data validation)
+- Prompt engineering — structured JSON output from LLM API
+- Full stack integration — Streamlit frontend calling FastAPI backend via HTTP
 - PDF text extraction with pdfplumber
-- Error handling (ConnectionError, Timeout, empty input validation)
-- Environment variable management (.env + python-dotenv)
-- API security — key stored safely, never exposed in code
+- Robust error handling (ConnectionError, Timeout, empty input validation, JSON parsing)
+- Secure environment variable management (.env + python-dotenv)
+- Cloud deployment — FastAPI on Render, Streamlit on Streamlit Cloud
 
 **How to run locally:**
 
-Terminal 1 — Backend:
+Terminal 1 — Start the backend:
 ```bash
 cd backend
 uvicorn main:app --reload
 ```
 
-Terminal 2 — Frontend:
+Terminal 2 — Start the frontend:
 ```bash
 cd frontend
 streamlit run app.py
 ```
+
+`Python` `FastAPI` `Anthropic Claude API` `Prompt Engineering` `Streamlit` `pdfplumber` `Pydantic` `REST API` `Render` `Streamlit Cloud`
 
 <details>
 <summary>📅 View daily build log</summary>
@@ -249,8 +253,8 @@ streamlit run app.py
 | Day 10 | UI polish — progress bar, color-coded match score, keyword badge styling, dividers, footer | ✅ |
 | Day 11 | End to end testing — all 5 scenarios tested and passing | ✅ |
 | Day 12 | Final README writeup, code cleanup | ✅ |
-
-*Updated as the project progresses.*
+| Day 13 | Full deployment — FastAPI on Render, Streamlit on Streamlit Cloud — app live! | ✅ |
+| Day 14 | Resume bullet written, LinkedIn post published | ✅ |
 
 </details>
 
@@ -261,7 +265,7 @@ streamlit run app.py
 - [x] Passenger Survival Risk Model — Logistic Regression
 - [x] Personalized Movie Recommendation Engine — Deployed
 - [x] E-commerce Revenue Intelligence Platform — Advanced SQL
-- [ ] AI-Powered Resume Analyzer — FastAPI + LLM API *(in progress)*
+- [x] AI-Powered Resume Analyzer — FastAPI + Claude API — **Live** 🚀
 - [ ] Advanced ML — Random Forest, Feature Engineering
 - [ ] RAG Systems + Vector Databases
 - [ ] AI Engineer 🚀
