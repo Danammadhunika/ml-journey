@@ -1,0 +1,74 @@
+﻿{#- resume/templates/tailored_resume.md.j2
+   ------------------------------------------
+   Renders a MasterResume (already reordered by the Resume Tailoring
+   Agent) as plain Markdown. This is a reference document for YOU to read
+   and copy from -- not something this project ever sends anywhere on
+   its own.
+
+   Whitespace note: trim_blocks/lstrip_blocks are OFF for this template
+   (see resume/render.py), so every {%- / -%} below is deliberate: it
+   marks a tag whose own line should contribute no blank line, while
+   plain {{ }} output lines keep their newline naturally. -#}
+{%- set contact_parts = [
+    resume.contact.email,
+    resume.contact.phone,
+    resume.contact.location,
+    resume.contact.linkedin_url,
+    resume.contact.github_url,
+    resume.contact.portfolio_url,
+] | select | list -%}
+# {{ resume.contact.name }}
+{%- if resume.contact.headline %}
+*{{ resume.contact.headline }}*
+{%- endif %}
+
+{{ contact_parts | join(" | ") }}
+
+## Summary
+
+{{ resume.summary }}
+
+## Skills
+
+{{ resume.skills | join(", ") }}
+
+## Experience
+{% for exp in resume.experience %}
+### {{ exp.title }} - {{ exp.company }}{% if exp.client %} (Client: {{ exp.client }}){% endif %}
+
+{{ exp.start_date }} - {{ exp.end_date }}{% if exp.location %} | {{ exp.location }}{% endif %}
+
+{% for bullet in exp.bullets %}
+- {{ bullet }}
+{%- endfor %}
+{% endfor %}
+
+## Education
+{% for edu in resume.education %}
+{%- set edu_extra = [] -%}
+{%- if edu.gpa %}{% set _ = edu_extra.append("GPA: " ~ edu.gpa) %}{% endif -%}
+{%- if edu.start_date or edu.end_date %}{% set _ = edu_extra.append((edu.start_date or "") ~ " - " ~ (edu.end_date or "")) %}{% endif -%}
+- **{{ edu.degree }}, {{ edu.field_of_study }}** - {{ edu.institution }}{% if edu_extra %} ({{ edu_extra | join(", ") }}){% endif %}
+{% endfor %}
+{% if resume.projects %}
+## Projects
+{% for project in resume.projects %}
+### {{ project.name }}
+
+{{ project.description }}
+
+{% for bullet in project.bullets %}
+- {{ bullet }}
+{%- endfor %}
+{% if project.technologies %}
+*Technologies: {{ project.technologies | join(", ") }}*
+{% endif %}
+{% endfor %}
+{% endif %}
+{% if resume.certifications %}
+## Certifications
+
+{% for cert in resume.certifications %}
+- {{ cert.name }}{% if cert.issuer %} - {{ cert.issuer }}{% endif %}{% if cert.date %} ({{ cert.date }}){% endif %}
+{% endfor %}
+{% endif %}

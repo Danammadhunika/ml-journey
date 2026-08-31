@@ -1,0 +1,91 @@
+{
+  "_README": "THIS IS A PLACEHOLDER / TEMPLATE FILE, NOT YOUR REAL RESUME. Copy this file to 'master_resume.json' in this same folder and replace every value with your real, truthful information. The agents in this project treat master_resume.json as ground truth -- they will not invent anything beyond what is written here, so what you put here is exactly (and only) what they will ever claim about you. Note on 'experience[].client': 'company' must always be your real employer/consultancy -- never replace it with a client name. Only set 'client' when this was a consulting/staffing placement (e.g. company: 'Some Consultancy Inc', client: 'End Client Co'); leave it null for a direct employer.",
+
+  "contact": {
+    "name": "Madhu",
+    "email": "your.email@example.com",
+    "phone": "REPLACE_WITH_PHONE",
+    "location": "United States",
+    "linkedin_url": "https://linkedin.com/in/REPLACE_ME",
+    "github_url": "https://github.com/REPLACE_ME",
+    "portfolio_url": null
+  },
+
+  "summary": "REPLACE: 2-4 sentence professional summary in your own words. Example shape only -- do not keep this text: 'Python developer with a Master's in Computer Science and hands-on experience building backend services, REST APIs, and automation tooling. Comfortable across the stack from FastAPI services to AWS deployment.'",
+
+  "skills": [
+    "Python",
+    "Object-Oriented Programming",
+    "FastAPI",
+    "REST APIs",
+    "REST API Integration",
+    "Automation Framework Design",
+    "Requests",
+    "Pandas",
+    "NumPy",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "SQL",
+    "NoSQL",
+    "Microservices",
+    "Serverless Architecture",
+    "React",
+    "Node.js"
+  ],
+
+  "skill_categories": {
+    "Languages": ["Python", "SQL"],
+    "Backend & APIs": ["FastAPI", "REST APIs", "Microservices", "Serverless Architecture"],
+    "Cloud & DevOps": ["AWS", "Docker", "Kubernetes"],
+    "Data": ["Pandas", "NumPy", "NoSQL"],
+    "Frontend": ["React", "Node.js"]
+  },
+
+  "experience": [
+    {
+      "company": "REPLACE_WITH_REAL_COMPANY_NAME",
+      "client": null,
+      "title": "REPLACE_WITH_REAL_TITLE",
+      "location": "REPLACE_WITH_CITY_STATE",
+      "start_date": "REPLACE (e.g. Jan 2024)",
+      "end_date": "REPLACE (e.g. Present)",
+      "bullets": [
+        "REPLACE: one real, truthful accomplishment or responsibility from this role.",
+        "REPLACE: another real bullet. Keep the achievements/metrics you actually had -- the tailoring agent can only reorder/reword these, never add new ones."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "REPLACE_WITH_REAL_SCHOOL",
+      "degree": "REPLACE (e.g. Master of Science)",
+      "field_of_study": "REPLACE (e.g. Computer Science)",
+      "location": "REPLACE_WITH_CITY_STATE",
+      "start_date": "REPLACE",
+      "end_date": "REPLACE",
+      "gpa": null
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "REPLACE_WITH_REAL_PROJECT_NAME",
+      "description": "REPLACE: one-line description of a real project you built.",
+      "bullets": [
+        "REPLACE: a real, truthful detail about what the project does or how you built it."
+      ],
+      "technologies": ["Python", "FastAPI"],
+      "url": null
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "REPLACE_IF_APPLICABLE (e.g. AWS Certified Cloud Practitioner)",
+      "issuer": "REPLACE (e.g. Amazon Web Services)",
+      "date": "REPLACE"
+    }
+  ]
+}

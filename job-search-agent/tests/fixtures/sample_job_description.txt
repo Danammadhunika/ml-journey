@@ -1,0 +1,20 @@
+Data Analyst / Python Developer — Hartford, CT (Hybrid, 2 days remote)
+
+We are looking for a Data Analyst with strong Python skills to join our
+analytics team supporting retail and e-commerce clients.
+
+Requirements:
+- 1+ years of experience with Python, Pandas, and SQL
+- Experience building dashboards or visualizations (Matplotlib, Seaborn, or similar)
+- Bachelor's degree in Computer Science, Statistics, or a related field
+- Comfortable writing SQL queries including joins and aggregations
+
+Preferred:
+- Experience with Scikit-learn or other ML libraries
+- Familiarity with AWS
+
+This is an entry-to-junior level position on our data team.
+
+We are unable to sponsor employment visas for this role; candidates must
+be authorized to work in the U.S. without company sponsorship, now or in
+the future.
